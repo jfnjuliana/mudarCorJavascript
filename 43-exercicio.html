@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="´PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch</title>
+</head>
+
+<body>
+
+    <select onchange="selecionarCor()" name="campoCor" id="cor">
+        <option value="azul">Azul</option>
+        <option value="verde">Verde</option>
+        <option value="rosa">Rosa</option>
+        <option value="laranja">Laranja</option>
+    </select>
+
+
+
+
+    <script>
+        function selecionarCor() {
+
+            let corPagina = cor.value
+
+            switch (corPagina) {
+                case "azul":
+                    document.body.style.background = "blue";
+                    break
+                case "verde":
+                    document.body.style.background = "green";
+                    break
+                case "rosa":
+                    document.body.style.background = "pink";
+                    break
+                case "laranja":
+                    document.body.style.background = "orange";
+                    break
+                   
+            }
+
+        }
+    </script>
+</body>
+
+</html>
